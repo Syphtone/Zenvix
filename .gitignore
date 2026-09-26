@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Challenge data — NEVER commit. Amazon-provided, ~2.5 GB, and redistributing it
+# would breach the challenge terms.
+# ---------------------------------------------------------------------------
+6ab10eb3b23ba_student_resource/
+dataset/
+*.pdf
+
+# ---------------------------------------------------------------------------
+# Pipeline outputs — too large for GitHub (candidate_pairs.tsv is 833 MB, and
+# GitHub hard-rejects any single file over 100 MB). Row counts and SHA-256
+# checksums are recorded in output/MANIFEST.md so the run stays auditable.
+# Regenerate them with code/business_entity_resolution/src/run_pipeline.py.
+# ---------------------------------------------------------------------------
+*.tsv
+lgb_matcher.txt
+output/output/
+Zenvix_submission/
+Zenvix_submission.zip
+*.zip
+
+# ---------------------------------------------------------------------------
+# Python / tooling
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# OS / editor cruft
+# ---------------------------------------------------------------------------
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Duplicate working copy; the canonical notebook is
+# code/business_entity_resolution/src/business_entity_resolution.ipynb
+/business_entity_resolution.ipynb
