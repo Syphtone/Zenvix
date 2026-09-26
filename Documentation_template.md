@@ -217,5 +217,3 @@ Pipeline funnel:
 | Pair-level blocking recall | 0.972 | — |
 
 ---
-
-**Note:** Teams can modify sections according to their approach while maintaining clarity and technical depth.
