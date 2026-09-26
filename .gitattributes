@@ -1,0 +1,14 @@
+# Normalise to LF everywhere, in the repository *and* the working tree.
+#
+# This matters for reproducibility: the submitted output TSVs are LF-terminated, and
+# the SHA-256 hashes recorded in output/MANIFEST.md only reproduce if a rerun writes
+# LF too. Letting Git hand out CRLF working copies on Windows would silently change
+# every hash.
+* text=auto eol=lf
+
+# Treat the notebook as text so diffs are reviewable, but never let a merge driver
+# rewrite it — its stored outputs are the record of the submitted run.
+*.ipynb text eol=lf -merge
+
+# Output and data files are always LF.
+*.tsv text eol=lf
